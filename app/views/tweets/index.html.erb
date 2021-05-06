@@ -1,0 +1,7 @@
+<div class="dontents row">
+  <% @tweets.each do |tweet| %>
+    <p><%= tweet.text %></p>
+    <span class="name">
+      <%= tweet.name %>
+    </span>
+</div>
