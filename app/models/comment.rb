@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-  belongs_to :tweet_id
+  belongs_to :tweet
   belongs_to :user
 end

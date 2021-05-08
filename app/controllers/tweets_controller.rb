@@ -32,6 +32,7 @@ class TweetsController < ApplicationController
     @comments = @tweet.comments.includes(:user)
   end
 
+
   private
   def tweet_params
     params.require(:tweet).permit(:image, :text).merge(user_id: current_user.id)
