@@ -5,6 +5,6 @@
 
 <div class="contents row">
   <% @tweets.each do |tweet| %>
-    <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+    <%= render partial: "tweet", locals: { tweet: tweet } %>
   <% end %>
 </div>
