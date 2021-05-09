@@ -4,8 +4,8 @@ class Tweet < ApplicationRecord
   has_many   :comments
 
   def self.search(search)
-    if serch != ""
-      Tweet.where('text LIKE(?), "%#{search}')
+    if search != ""
+      Tweet.where('text LIKE(?)', "%#{search}%'")
     else
       Tweet.all
     end
